@@ -74,6 +74,7 @@ def readable_function(func, *args, **kwargs):
     func_name = func.__name__.replace('_', ' ').title()
     func_args = ', '.join([f"{value}" for value in kwargs.values()])
     actual_result = f"{func_name} [{func_args}]"
+    print(actual_result)
     return actual_result
 
 
